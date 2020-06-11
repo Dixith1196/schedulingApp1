@@ -1,0 +1,17 @@
+{
+  "name": "schedulingApp1",
+  "displayName": "schedulingApp1",
+  "expo": {
+    "name": "schedulingApp1",
+    "slug": "expo-template-bare",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
