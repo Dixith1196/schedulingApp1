@@ -10,9 +10,7 @@ import NavigationService from './navigationService.js';
 // import colors from '../../res/colors';
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
+
 });
 
 export default class AppNavigator extends React.Component {
