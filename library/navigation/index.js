@@ -1,6 +1,7 @@
 /* eslint-disable react-native/no-raw-text */
 import React from 'react';
 import { StatusBar, View, StyleSheet, NetInfo, AsyncStorage } from 'react-native';
+import  Login  from '../../src/Login'
 // import NoInternet from '../components/NoInternetScreen';
 
 // import PrefConstants from '../PrefConstants';
@@ -20,8 +21,6 @@ export default class AppNavigator extends React.Component {
       isConnected: true,
       isLoggedIn: false,
     };
-    this.checkUserLoggedIn = this.checkUserLoggedIn.bind(this);
-    this.handleConnectivityChange = this.handleConnectivityChange.bind(this);
   }
 
 
@@ -35,16 +34,8 @@ export default class AppNavigator extends React.Component {
     const { isConnected, isLoggedIn } = this.state;
     return (
       <View style={styles.container}>
-        {!isConnected && <NoInternet />}
-        {isLoggedIn && <StatusBar backgroundColor={colors.primaryColor} barStyle="light-content" />}
-        {!isLoggedIn && <StatusBar backgroundColor={colors.transparent} translucent />}
-        {isConnected && (
-          <NavigationStack
-            ref={navigatorRef => {
-              NavigationService.setTopLevelNavigator(navigatorRef);
-            }}
-          />
-        )}
+          <Login />
+      
       </View>
     );
   }

@@ -4,7 +4,6 @@ import { TouchableOpacity } from 'react-native';
 import { Icon } from 'native-base';
 import { NavigationActions, StackActions } from 'react-navigation';
 
-import { fontMaker } from '../components/FontMaker';
 
 let navigator;
 
